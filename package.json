@@ -28,7 +28,8 @@
     "build": "npm run clean && npm run less && babel src --out-dir lib --copy-files",
     "build:docs": "webpack --config ./webpack.config.js",
     "prepublishOnly": "npm run build",
-    "docs": "webpack-dev-server --config ./webpack.config.js"
+    "docs": "webpack-dev-server --config ./webpack.config.js",
+    "prepare": "npm run build"
   },
   "jest": {
     "roots": [
